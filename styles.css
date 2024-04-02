@@ -1,0 +1,60 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .sunset {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #add8e6, #d4503e, #fdd835, #ffeb3b);
+  }
+  
+  .sun {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 170px;
+    height: 170px;
+    border-radius: 70%;
+    background: #ffd54f;
+    box-shadow: 0 0 50px 10px #ffd54f;
+  }
+  
+  .city {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: rgba(95, 20, 20, 0.685);
+  }
+  
+  .building {
+    float: left;
+    width: 30px;
+    height: 60%;
+    margin: 0 10px;
+    background: #263238;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  }
+  
+  .road {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px; 
+    background-color: #868282;
+}
+
+.road::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 200px; 
+    height: 4px; 
+    background-color: #fff;
+    transform: translateX(-50%);
+}
